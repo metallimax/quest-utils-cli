@@ -1,0 +1,12 @@
+ENIGMA.PLUGIN_BOARD="a,j;z,k;o,p"
+ENIGMA.ROTOR1.MAPPING="a,u;b,m;c,x;d,y;e,t;f,j;g,f;h,q;i,u;j,j;k,n;l,t;m,z;n,o;o,r;p,y;q,t;r,u;s,g;t,z;u,y;v,o;w,n;x,g;y,y;z,q"
+ENIGMA.ROTOR1.RING=4
+ENIGMA.ROTOR2.MAPPING="a,r;b,h;c,q;d,q;e,e;f,j;g,n;h,n;i,c;j,x;k,j;l,u;m,m;n,l;o,r;p,c;q,t;r,g;s,o;t,w;u,b;v,p;w,p;x,t;y,z;z,b"
+ENIGMA.ROTOR2.RING=23
+ENIGMA.ROTOR3.MAPPING="a,z;b,q;c,a;d,g;e,i;f,z;g,s;h,w;i,a;j,a;k,a;l,t;m,i;n,a;o,z;p,b;q,b;r,l;s,y;t,a;u,d;v,h;w,e;x,h;y,h;z,l"
+ENIGMA.ROTOR3.RING=10
+ENIGMA.ROTOR4.MAPPING="a,n;b,t;c,m;d,d;e,v;f,s;g,l;h,t;i,n;j,x;k,i;l,u;m,u;n,t;o,g;p,j;q,l;r,j;s,e;t,g;u,s;v,l;w,g;x,z;y,m;z,i"
+ENIGMA.ROTOR4.RING=9
+ENIGMA.ROTOR5.MAPPING="a,m;b,o;c,v;d,k;e,z;f,k;g,f;h,w;i,b;j,m;k,i;l,z;m,p;n,n;o,k;p,g;q,t;r,v;s,s;t,x;u,g;v,o;w,y;x,l;y,h;z,x"
+ENIGMA.ROTOR5.RING=18
+ENIGMA.REFLECTOR="a,p;b,p;c,c;d,u;e,k;f,p;g,q;h,n;i,b;j,n;k,p;l,h;m,n;n,g;o,y;p,l;q,v;r,f;s,v;t,x;u,r;v,b;w,f;x,i;y,a;z,f"

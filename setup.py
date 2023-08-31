@@ -10,7 +10,7 @@ with open("README.md", "r") as readme_file:
     readme = readme_file.readlines()
 
 setup(
-    name="mpdm-admin-cli",
+    name="quest_utils_cli",
     use_scm_version={
         "tag_regex": r"^(?:[\w\-\/]+)?(?P<version>[vV]?\d+(?:\.\d+){0,2}[^\+]?)(?:\+.*)?$"
     },

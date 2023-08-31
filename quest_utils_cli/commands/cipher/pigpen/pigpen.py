@@ -1,4 +1,3 @@
-import string
 import typer
 
 from importlib import resources as impresources
@@ -8,7 +7,7 @@ from rich.console import Console
 from rich.theme import Theme
 from typing_extensions import Annotated
 
-# from ....assets.cipher import pigpen
+from ....common import ALPHABET, ALPHABET_SET, ALPHABET_SET_W_SPACE
 
 
 app = typer.Typer()
@@ -17,12 +16,8 @@ custom_theme = Theme({"key": "yellow", "value": "cyan"})
 console = Console(theme=custom_theme)
 err_console = Console(stderr=True)
 
-ALPHABET = string.ascii_lowercase
-ALPHABET_SET = set(ALPHABET)
-ALPHABET_SET_W_SPACE = ALPHABET_SET | {" "}
 
-
-class Pigpen:
+class Pigpen(object):
     def __init__(self, password: str):
         self.password = password.lower()
         self.table = self._get_reodered_alphabet()
@@ -52,7 +47,10 @@ class Pigpen:
 def cipher(
     text: str,
     password: Annotated[
-        str, typer.Option(prompt=True, confirmation_prompt=True, hide_input=True)
+        str,
+        typer.Option(
+            prompt=True, confirmation_prompt=True, hide_input=True, help="Password"
+        ),
     ],
     output: Annotated[Path, typer.Option(..., "--output", "-o")],
 ):
@@ -83,7 +81,10 @@ def cipher(
 def decipher(
     text: str,
     password: Annotated[
-        str, typer.Option(prompt=True, confirmation_prompt=True, hide_input=True)
+        str,
+        typer.Option(
+            prompt=True, confirmation_prompt=True, hide_input=True, help="Password"
+        ),
     ],
 ):
     """
